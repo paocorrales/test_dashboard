@@ -1,7 +1,7 @@
 name: Generate NCI resources report
-on: 
+on:
   schedule:
-    - cron: '10 2 * * *'
+    - cron: '18 2 * * *'
 
 jobs:
   runcode:
