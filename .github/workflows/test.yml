@@ -1,0 +1,17 @@
+name: Scheduled Workflow
+
+on:
+  schedule:
+    - cron: '25 2 * * *' # Runs every day at 2:30 PM UTC
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run tests
+        run: |
+          echo "hello github"
